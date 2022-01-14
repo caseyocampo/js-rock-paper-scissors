@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+header {
+    background: #141a41;
+    color: white;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    background: #ede2fb;
+    height: calc(100vh - 83px);
+    padding: 25px 1em;
+}
+
+main h2 {
+    color: #1e1318;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 650px;
+    margin: 50px auto 25px auto;
+}
+
+.player--card,
+.player--card img {
+    height: 250px;
+    width: 250px;
+}
+
+#playBtn {
+    background: #c34eb5;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 15px 15px lightgrey;
+    display: block;
+    font-size: 1.5rem;
+    height: 100px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+#playBtn:hover {
+    box-shadow: none;
+}
+
+.hand {
+    display: none;
+}
+
+.computerHand {
+    display: none;
+}
+
+.active {
+    display: block;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JS Rock, Paper, Scissors Game</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Rock, Paper, Scissors Game</h1>
+        </header>
+        <main>
+            <h2 is="message">Press Play Button to Start</h2>
+            <div class="container">
+                <div>
+                    <p>Your hand</p>
+                    <div class="player--card">
+                        <img
+                            src="./images/question-mark.png"
+                            alt="player one hand"
+                            id="playerQuestionMark"
+                        />
+                        <img
+                            src="./images/rock.png"
+                            alt="rock"
+                            class="hand"
+                            id="rockPlayer"
+                        />
+                        <img
+                            src="./images/paper.png"
+                            alt="paper"
+                            class="hand"
+                            id="paperPlayer"
+                        />
+                        <img
+                            src="./images/scissors.png"
+                            alt="scissors"
+                            class="hand"
+                            id="scissorsPlayer"
+                        />
+                    </div>
+                    <!-- /.player--card -->
+                </div>
+                <div>
+                    <p>Computer</p>
+                    <div class="player--card">
+                        <img
+                            src="./images/question-mark.png"
+                            alt="player computer hand"
+                            class="active"
+                            id="questionMark"
+                        />
+                        <img
+                            src="./images/rock.png"
+                            alt="rock"
+                            class="computerHand"
+                            id="rock"
+                        />
+                        <img
+                            src="./images/paper.png"
+                            alt="paper"
+                            class="computerHand"
+                            id="paper"
+                        />
+                        <img
+                            src="./images/scissors.png"
+                            alt="scissors"
+                            class="computerHand"
+                            id="scissors"
+                        />
+                    </div>
+                </div>
+                <!-- /.player--card -->
+            </div>
+            <button id="playBtn">Play Game</button>
+        </main>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
