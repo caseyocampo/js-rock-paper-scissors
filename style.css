@@ -83,6 +83,30 @@ main h2 {
     border: 5px solid #141a41;
 }
 
+.enterName {
+    background: #c34eb5;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+#userName {
+    border: white;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    height: 30px;
+    margin-left: 1em;
+    padding: 5px;
+}
+
+#submitBtn {
+    background: #fce94e;
+    border: none;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 5px;
+}
+
 @media screen and (max-width: 570px) {
     .player--card,
     .player--card img {
@@ -94,6 +118,24 @@ main h2 {
     #resetBtn {
         height: 75px;
         width: 225px;
+    }
+
+    .enterName {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #userName {
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    #submitBtn {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 7px;
+        margin-bottom: 5px;
     }
 }
 

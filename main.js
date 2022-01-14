@@ -81,31 +81,38 @@ function showWinner() {
     // Rock Hands
     if (randomHand === 1 && randomHandComputer === 2) {
         message.textContent = 'Computer wins!'
-
         paper.classList.add('winner')
         removePlayerWinner()
     } else if (randomHand === 1 && randomHandComputer === 3) {
-        message.textContent = 'Player rock beats computer scissors!'
         // message.textContent = `${userName.value} wins!`
+        message.textContent = `${userName.value}`
+            ? `${userName.value} wins!`
+            : `You win!`
         rockPlayer.classList.add('winner')
         removeComputerWinner()
     } else if (randomHandComputer === 1 && randomHand === 2) {
-        message.textContent = 'Player paper beats computer rock!'
+        // message.textContent = `${userName.value} wins!`
+        message.textContent = `${userName.value}`
+            ? `${userName.value} wins!`
+            : `You win!`
         paperPlayer.classList.add('winner')
         removeComputerWinner()
     } else if (randomHandComputer === 1 && randomHand === 3) {
-        message.textContent = 'Computer rock beats player scissors!'
+        message.textContent = 'Computer wins!'
         rock.classList.add('winner')
         removePlayerWinner()
     }
 
     // Paper Hands
     if (randomHand === 2 && randomHandComputer === 3) {
-        message.textContent = 'Computer scissors beats player paper!'
+        message.textContent = 'Computer wins!'
         scissors.classList.add('winner')
         removePlayerWinner()
     } else if (randomHandComputer === 2 && randomHand === 3) {
-        message.textContent = 'Player scissors beats computer paper!'
+        // message.textContent = `${userName.value} wins!`
+        message.textContent = `${userName.value}`
+            ? `${userName.value} wins!`
+            : `You win!`
         scissorsPlayer.classList.add('winner')
         removeComputerWinner()
     }
@@ -148,11 +155,10 @@ function resetGame() {
     randomHandComputer = Math.floor(Math.random() * playerHands.length) + 1
 }
 
-// const userName = document.getElementById('userName')
-// const submitBtn = document.getElementById('submitBtn')
-// const playerUserName = document.getElementById('playerUserName')
+const userName = document.getElementById('userName')
+const submitBtn = document.getElementById('submitBtn')
+const playerUserName = document.getElementById('playerUserName')
 
-// submitBtn.addEventListener('click', function () {
-//     console.log(userName.value)
-//     playerUserName.textContent = `${userName.value}'s Hand`
-// })
+submitBtn.addEventListener('click', function () {
+    playerUserName.textContent = `${userName.value}'s Hand`
+})
