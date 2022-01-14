@@ -107,4 +107,10 @@ main h2 {
         height: 175px;
         width: 175px;
     }
+
+    #playBtn,
+    #resetBtn {
+        height: 75px;
+        width: 225px;
+    }
 }
