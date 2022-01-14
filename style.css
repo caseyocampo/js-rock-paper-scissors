@@ -92,8 +92,6 @@ main h2 {
 
 #userName {
     border: white;
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
     height: 30px;
     margin-left: 1em;
     padding: 5px;
@@ -102,10 +100,10 @@ main h2 {
 #submitBtn {
     background: #fce94e;
     border: none;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
     color: black;
-    padding: 5px;
+    height: 30px;
+    margin-left: -5px;
+    padding: 5px 15px;
     -webkit-appearance: none;
 }
 
@@ -128,18 +126,11 @@ main h2 {
     }
 
     #userName {
-        border-top-right-radius: 7px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
         margin-top: 10px;
         margin-left: 0;
     }
 
     #submitBtn {
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px;
         color: black;
         margin-bottom: 5px;
         -webkit-appearance: none;
