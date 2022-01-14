@@ -82,3 +82,11 @@ main h2 {
 .winner {
     border: 5px solid #141a41;
 }
+
+@media screen and (max-width: 570px) {
+    .player--card,
+    .player--card img {
+        height: 175px;
+        width: 175px;
+    }
+}
