@@ -34,6 +34,11 @@ main h2 {
     margin: 50px auto 25px auto;
 }
 
+.player--title {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
 .player--card,
 .player--card img {
     height: 250px;
