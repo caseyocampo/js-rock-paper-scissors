@@ -73,24 +73,59 @@ function showWinner() {
         (randomHand === 3 && randomHandComputer === 3)
     ) {
         message.textContent = "It's a tie! 🎉"
+
+        computerHands = document.getElementsByClassName('computerHand')
+        for (let computerHand of computerHands) {
+            computerHand.classList.remove('winner')
+        }
+        playerHands = document.getElementsByClassName('hand')
+        for (let playerHand of playerHands) {
+            playerHand.classList.remove('winner')
+        }
     }
 
     // Rock Hands
     if (randomHand === 1 && randomHandComputer === 2) {
         message.textContent = 'Computer paper beats player rock!'
+        paper.classList.add('winner')
+        playerHands = document.getElementsByClassName('hand')
+        for (let playerHand of playerHands) {
+            playerHand.classList.remove('winner')
+        }
     } else if (randomHand === 1 && randomHandComputer === 3) {
         message.textContent = 'Player rock beats computer scissors!'
+        rockPlayer.classList.add('winner')
+        computerHands = document.getElementsByClassName('computerHand')
+        for (let computerHand of computerHands) {
+            computerHand.classList.remove('winner')
+        }
     } else if (randomHandComputer === 1 && randomHand === 2) {
         message.textContent = 'Player paper beats computer rock!'
+        paperPlayer.classList.add('winner')
+        computerHands = document.getElementsByClassName('computerHand')
+        for (let computerHand of computerHands) {
+            computerHand.classList.remove('winner')
+        }
     } else if (randomHandComputer === 1 && randomHand === 3) {
         message.textContent = 'Computer rock beats player scissors!'
+        rock.classList.add('winner')
+        playerHands = document.getElementsByClassName('hand')
+        for (let playerHand of playerHands) {
+            playerHand.classList.remove('winner')
+        }
     }
 
     // Paper Hands
     if (randomHand === 2 && randomHandComputer === 3) {
         message.textContent = 'Computer scissors beats player paper!'
+        scissors.classList.add('winner')
+        playerHands = document.getElementsByClassName('hand')
+        for (let playerHand of playerHands) {
+            playerHand.classList.remove('winner')
+        }
     } else if (randomHandComputer === 2 && randomHand === 3) {
         message.textContent = 'Player scissors beats computer paper!'
+        scissorsPlayer.classList.add('winner')
     }
 }
 

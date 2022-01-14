@@ -78,3 +78,7 @@ main h2 {
 .active {
     display: block;
 }
+
+.winner {
+    border: 5px solid #141a41;
+}
