@@ -45,7 +45,8 @@ main h2 {
     width: 250px;
 }
 
-#playBtn {
+#playBtn,
+#resetBtn {
     background: #c34eb5;
     color: white;
     cursor: pointer;
@@ -63,10 +64,11 @@ main h2 {
     box-shadow: none;
 }
 
-.hand {
+#resetBtn {
     display: none;
 }
 
+.hand,
 .computerHand {
     display: none;
 }
