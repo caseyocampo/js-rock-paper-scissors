@@ -139,7 +139,10 @@ main h2 {
         border-top-left-radius: 0;
         border-bottom-left-radius: 7px;
         border-bottom-right-radius: 7px;
+        color: black;
+
         margin-bottom: 5px;
+        -webkit-appearance: none;
     }
 }
 
