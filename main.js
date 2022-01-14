@@ -75,50 +75,28 @@ function showWinner() {
         message.textContent = "It's a tie! 🏳️"
 
         removeComputerWinner()
-        // computerHands = document.getElementsByClassName('computerHand')
-        // for (let computerHand of computerHands) {
-        //     computerHand.classList.remove('winner')
-        // }
         removePlayerWinner()
-        // playerHands = document.getElementsByClassName('hand')
-        // for (let playerHand of playerHands) {
-        //     playerHand.classList.remove('winner')
-        // }
     }
 
     // Rock Hands
     if (randomHand === 1 && randomHandComputer === 2) {
-        message.textContent = 'Computer paper beats player rock!'
+        message.textContent = 'Computer wins!'
+
         paper.classList.add('winner')
         removePlayerWinner()
-        // playerHands = document.getElementsByClassName('hand')
-        // for (let playerHand of playerHands) {
-        //     playerHand.classList.remove('winner')
-        // }
     } else if (randomHand === 1 && randomHandComputer === 3) {
         message.textContent = 'Player rock beats computer scissors!'
+        // message.textContent = `${userName.value} wins!`
         rockPlayer.classList.add('winner')
         removeComputerWinner()
-        // computerHands = document.getElementsByClassName('computerHand')
-        // for (let computerHand of computerHands) {
-        //     computerHand.classList.remove('winner')
-        // }
     } else if (randomHandComputer === 1 && randomHand === 2) {
         message.textContent = 'Player paper beats computer rock!'
         paperPlayer.classList.add('winner')
         removeComputerWinner()
-        // computerHands = document.getElementsByClassName('computerHand')
-        // for (let computerHand of computerHands) {
-        //     computerHand.classList.remove('winner')
-        // }
     } else if (randomHandComputer === 1 && randomHand === 3) {
         message.textContent = 'Computer rock beats player scissors!'
         rock.classList.add('winner')
         removePlayerWinner()
-        // playerHands = document.getElementsByClassName('hand')
-        // for (let playerHand of playerHands) {
-        //     playerHand.classList.remove('winner')
-        // }
     }
 
     // Paper Hands
@@ -126,10 +104,6 @@ function showWinner() {
         message.textContent = 'Computer scissors beats player paper!'
         scissors.classList.add('winner')
         removePlayerWinner()
-        // playerHands = document.getElementsByClassName('hand')
-        // for (let playerHand of playerHands) {
-        //     playerHand.classList.remove('winner')
-        // }
     } else if (randomHandComputer === 2 && randomHand === 3) {
         message.textContent = 'Player scissors beats computer paper!'
         scissorsPlayer.classList.add('winner')
@@ -173,3 +147,12 @@ function resetGame() {
     randomHand = Math.floor(Math.random() * playerHands.length) + 1
     randomHandComputer = Math.floor(Math.random() * playerHands.length) + 1
 }
+
+// const userName = document.getElementById('userName')
+// const submitBtn = document.getElementById('submitBtn')
+// const playerUserName = document.getElementById('playerUserName')
+
+// submitBtn.addEventListener('click', function () {
+//     console.log(userName.value)
+//     playerUserName.textContent = `${userName.value}'s Hand`
+// })
