@@ -72,7 +72,7 @@ function showWinner() {
         (randomHand === 2 && randomHandComputer === 2) ||
         (randomHand === 3 && randomHandComputer === 3)
     ) {
-        message.textContent = "It's a tie! 🎉"
+        message.textContent = "It's a tie! 🏳️"
 
         computerHands = document.getElementsByClassName('computerHand')
         for (let computerHand of computerHands) {
