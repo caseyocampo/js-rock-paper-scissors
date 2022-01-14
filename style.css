@@ -92,6 +92,10 @@ main h2 {
 }
 
 @media (orientation: landscape) and (max-height: 757px) {
+    .container {
+        max-width: 500px;
+    }
+
     .player--card,
     .player--card img {
         height: 175px;
