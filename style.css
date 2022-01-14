@@ -90,3 +90,11 @@ main h2 {
         width: 175px;
     }
 }
+
+@media (orientation: landscape) and (max-height: 757px) {
+    .player--card,
+    .player--card img {
+        height: 175px;
+        width: 175px;
+    }
+}
