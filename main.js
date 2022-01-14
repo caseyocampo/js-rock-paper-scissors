@@ -22,6 +22,7 @@ playBtn.addEventListener('click', function () {
 
 let computerHands = document.getElementsByClassName('computerHand')
 let randomHandComputer = Math.floor(Math.random() * computerHands.length) + 1
+
 function computerTurn() {
     questionMark.style.display = 'none'
 
@@ -42,6 +43,7 @@ function computerTurn() {
 
 let playerHands = document.getElementsByClassName('hand')
 let randomHand = Math.floor(Math.random() * playerHands.length) + 1
+
 function playerTurn() {
     playerQuestionMark.style.display = 'none'
 
@@ -64,34 +66,31 @@ function showWinner() {
     playBtn.style.display = 'none'
     resetBtn.style.display = 'block'
 
-    // tie game
+    // Tie Game
     if (
         (randomHand === 1 && randomHandComputer === 1) ||
         (randomHand === 2 && randomHandComputer === 2) ||
         (randomHand === 3 && randomHandComputer === 3)
     ) {
-        // console.log('its a tie!')
         message.textContent = "It's a tie! 🎉"
     }
 
-    // rock hands
+    // Rock Hands
     if (randomHand === 1 && randomHandComputer === 2) {
-        // console.log('computer paper beats player rock')
-        message.textContent = 'computer paper beats player rock'
+        message.textContent = 'Computer paper beats player rock!'
     } else if (randomHand === 1 && randomHandComputer === 3) {
-        // console.log('player rock beats computer scissors')
-        message.textContent = 'player rock beats computer scissors'
+        message.textContent = 'Player rock beats computer scissors!'
     } else if (randomHandComputer === 1 && randomHand === 2) {
-        console.log('player paper beats computer rock')
+        message.textContent = 'Player paper beats computer rock!'
     } else if (randomHandComputer === 1 && randomHand === 3) {
-        console.log('Computer rock beats player scissors!')
+        message.textContent = 'Computer rock beats player scissors!'
     }
 
-    // paper hands
+    // Paper Hands
     if (randomHand === 2 && randomHandComputer === 3) {
-        console.log('computer scissors beats player paper')
+        message.textContent = 'Computer scissors beats player paper!'
     } else if (randomHandComputer === 2 && randomHand === 3) {
-        console.log('player scissors beats computer paper')
+        message.textContent = 'Player scissors beats computer paper!'
     }
 }
 
@@ -113,8 +112,6 @@ function resetGame() {
     for (let playerHand of playerHands) {
         playerHand.style.display = 'none'
     }
-
-    let randomHand = Math.floor(Math.random() * playerHands.length) + 1
-    let randomHandComputer =
-        Math.floor(Math.random() * computerHands.length) + 1
+    randomHand = Math.floor(Math.random() * playerHands.length) + 1
+    randomHandComputer = Math.floor(Math.random() * playerHands.length) + 1
 }
