@@ -97,6 +97,14 @@ main h2 {
     padding: 5px;
 }
 
+input {
+    border-radius: 0;
+}
+
+input[type='search'] {
+    -webkit-appearance: none;
+}
+
 #submitBtn {
     background: #fce94e;
     border: none;
