@@ -117,6 +117,15 @@ input[type='search'] {
 }
 
 @media screen and (max-width: 570px) {
+    header h1 {
+        font-size: 1.25rem;
+    }
+
+    main h2 {
+        font-size: 1.25rem;
+        height: 40px;
+    }
+
     .player--card,
     .player--card img {
         height: 175px;
