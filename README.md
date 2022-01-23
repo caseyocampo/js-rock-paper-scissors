@@ -10,3 +10,5 @@ Features include:
 4. Reset the game
 
 [Play the game!](https://caseyocampo.github.io/js-rock-paper-scissors/)
+
+You can also read how I built the game on my website [here](https://www.caseyocampo.com/js-rock-paper-scissors-game/).
